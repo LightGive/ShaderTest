@@ -18,8 +18,7 @@
 
 	void vert(inout appdata_full v)
 	{
-		uniform float _TimeScale;
-		v.vertex.x += _SinTime.x* _TimeScale* v.normal.x * sin(v.vertex.y);
+		v.vertex.x += _SinTime.x * v.normal.x * sin(v.vertex.y * 3.14 * 16);
 		//v.vertex.z += _SinTime.x * v.normal.z * sin(v.vertex.y * 3.14 * 16);
 	}
 
